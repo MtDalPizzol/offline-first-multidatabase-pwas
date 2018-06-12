@@ -1,0 +1,242 @@
+\providecommand{\abntreprintinfo}[1]{%
+ \citeonline{#1}}
+\setlength{\labelsep}{0pt}\begin{thebibliography}{}
+\providecommand{\abntrefinfo}[3]{}
+\providecommand{\abntbstabout}[1]{}
+\abntbstabout{v-1.9.6 }
+
+\bibitem[9to5mac 2011]{9to5-2011}
+\abntrefinfo{9to5mac}{9TO5MAC}{2011}
+{9TO5MAC. \emph{Job's original vision for the iPhone\: No third-party native
+  apps}. 2011.
+Dispon{\'\i}vel em:
+  $<$https://9to5mac.com/2011/10/21/jobs-original-vision-for-the-iphone-no-third-party-native-apps$>$.
+  Acesso em: 12 out 2017.}
+
+\bibitem[Archibald 2017]{archibald-2017}
+\abntrefinfo{Archibald}{ARCHIBALD}{2017}
+{ARCHIBALD, J. \emph{The Offline Cookbook}. 2017.
+Dispon{\'\i}vel em:
+  \url{https://developers.google.com/web/fundamentals/instant-and-offline/offline-cookbook/}.
+  Acesso em: 15 nov 2017.}
+
+\bibitem[Brown 2014]{brown-2014}
+\abntrefinfo{Brown}{BROWN}{2014}
+{BROWN, T. \emph{Building an Offline First App with PouchDB}. 2014.
+Dispon{\'\i}vel em:
+  \url{https://www.sitepoint.com/building-offline-first-app-pouchdb}. Acesso
+  em: 15 out 2017.}
+
+\bibitem[CouchDB 2017]{couchdb-2017}
+\abntrefinfo{CouchDB}{COUCHDB}{2017}
+{COUCHDB. 2017.
+Dispon{\'\i}vel em: \url{http://couchdb.apache.org/}. Acesso em: 11 dez 2017.}
+
+\bibitem[Cselle 2012]{cselle-2012}
+\abntrefinfo{Cselle}{CSELLE}{2012}
+{CSELLE, G. \emph{Every Step Costs You 20\% of Users}. 2012.
+Dispon{\'\i}vel em:
+  \url{http://blog.gaborcselle.com/2012/10/every-step-costs-you-20-of-users.html}.
+  Acesso em: 2 out 2017.}
+
+\bibitem[DA-14 2017]{da-14-2017}
+\abntrefinfo{DA-14}{DA-14}{2017}
+{DA-14. \emph{Eight Reasons to Consider Progressive Web App Development}. 2017.
+Dispon{\'\i}vel em:
+  \url{https://da-14.com/blog/eight-reasons-consider-progressive-web-app-development}.
+  Acesso em: 2 out 2017.}
+
+\bibitem[Express 2017]{express-2017}
+\abntrefinfo{Express}{EXPRESS}{2017}
+{EXPRESS. \emph{Express.js}. 2017.
+Dispon{\'\i}vel em: \url{http://expressjs.com}. Acesso em: 14 nov 2017.}
+
+\bibitem[Feyerke 2013]{feyerke-2013}
+\abntrefinfo{Feyerke}{FEYERKE}{2013}
+{FEYERKE, A. \emph{Say Hello to Offline First}. 2013.
+Dispon{\'\i}vel em: \url{http://hood.ie/blog/say-hello-to-offline-first.html}.
+  Acesso em: 2 out 2017.}
+
+\bibitem[Feyerke 2014]{feyerke-2014}
+\abntrefinfo{Feyerke}{FEYERKE}{2014}
+{FEYERKE, A. \emph{Alex Feyerk - Offline First}. 2014.
+Dispon{\'\i}vel em: \url{https://www.youtube.com/watch?v=dPz\_5-MEvcg}. Acesso
+  em: 2 out 2017.}
+
+\bibitem[Gaunt 2017]{gaunt-2017}
+\abntrefinfo{Gaunt}{GAUNT}{2017}
+{GAUNT, M. \emph{Service Workers\: uma Introdução}. 2017.
+Dispon{\'\i}vel em:
+  \url{https://developers.google.com/web/fundamentals/primers/service-workers}.
+  Acesso em: 12 out 2017.}
+
+\bibitem[Gaunt e Kinlan 2017]{gaunt-kinlan-2017}
+\abntrefinfo{Gaunt e Kinlan}{GAUNT; KINLAN}{2017}
+{GAUNT, M.; KINLAN, P. \emph{O manifesto do aplicativo web}. 2017.
+Dispon{\'\i}vel em:
+  \url{https://developers.google.com/web/fundamentals/web-app-manifest/?hl=pt-br}.
+  Acesso em: 12 out 2017.}
+
+\bibitem[Holt 2015]{holt-2015}
+\abntrefinfo{Holt}{HOLT}{2015}
+{HOLT, B. \emph{Offline-First Apps with PouchDB}. 2015.
+Dispon{\'\i}vel em: \url{https://www.youtube.com/watch?v=7L7esHWAjSU}. Acesso
+  em: 31 out 2017.}
+
+\bibitem[JWT 2017]{jwt-2017}
+\abntrefinfo{JWT}{JWT}{2017}
+{JWT. \emph{JWT}. 2017.
+Dispon{\'\i}vel em: \url{https://jwt.io/}. Acesso em: 10 dez 2017.}
+
+\bibitem[Kumar 2016]{kumar-2016}
+\abntrefinfo{Kumar}{KUMAR}{2016a}
+{KUMAR, M. \emph{Progressive Web Apps\: Better and Low Cost Mobile Presence}.
+  2016.
+Dispon{\'\i}vel em:
+  \url{https://dzone.com/articles/progressive-web-app-better-low-cost-mobile-presenc}.
+  Acesso em: 2 out 2017.}
+
+\bibitem[Kumar 2016]{kumar-nikhil-2016}
+\abntrefinfo{Kumar}{KUMAR}{2016b}
+{KUMAR, N. \emph{Intro PouchDB, unroll CouchBase crust and offline data Sync in
+  Ionic with 4-way Data Binding.} 2016.
+Dispon{\'\i}vel em:
+  \url{https://blog.knoldus.com/2016/01/08/intro-pouchdb-unroll-couchbase-crust-and-offline-data-sync-in-ionic-with-4-way-data-binding/}.
+  Acesso em: 10 dez 2017.}
+
+\bibitem[Lawson 2017]{lawson-2017}
+\abntrefinfo{Lawson}{LAWSON}{2017}
+{LAWSON, N. \emph{PouchDB and CouchDB\: an interview with Nolan Lawson}. 2017.
+Dispon{\'\i}vel em:
+  \url{https://blog.couchdb.org/2017/04/04/pouchdb-couchdb-an-interview-with-nolan-lawson}.
+  Acesso em: 15 out 2017.}
+
+\bibitem[Lopes 2016]{lopes-2016}
+\abntrefinfo{Lopes}{LOPES}{2016}
+{LOPES, S. \emph{Progressive Web Apps por Sergio Lopes - Devfest São Paulo
+  2016}. 2016.
+Dispon{\'\i}vel em: \url{https://www.youtube.com/watch?v=tECW-YJXV1o}. Acesso
+  em: 2 out 2017.}
+
+\bibitem[Martynus 2017]{martynus-2017}
+\abntrefinfo{Martynus}{MARTYNUS}{2017}
+{MARTYNUS, G. \emph{Building Offline First apps with Hoodie | js.la March
+  2017}. 2017.
+Dispon{\'\i}vel em: \url{https://www.youtube.com/watch?v=TSDyxtVbbME}. Acesso
+  em: 31 out 2017.}
+
+\bibitem[Material-Design 2018]{material-design-2018}
+\abntrefinfo{Material-Design}{MATERIAL-DESIGN}{2018}
+{MATERIAL-DESIGN. \emph{Material Design}. 2018.
+Dispon{\'\i}vel em: \url{https://material.io/}. Acesso em: 12 jun 2018.}
+
+\bibitem[Node.js 2017]{node-2017}
+\abntrefinfo{Node.js}{NODE.JS}{2017}
+{NODE.JS. \emph{Node.js}. 2017.
+Dispon{\'\i}vel em: \url{https://nodejs.org}. Acesso em: 10 dez 2017.}
+
+\bibitem[NPM 2017]{npm-2017}
+\abntrefinfo{NPM}{NPM}{2017}
+{NPM. \emph{NPM}. 2017.
+Dispon{\'\i}vel em: \url{https://www.npmjs.com/}. Acesso em: 10 dez 2017.}
+
+\bibitem[Nuxt-PWA 2018]{nuxt-pwa-2018}
+\abntrefinfo{Nuxt-PWA}{NUXT-PWA}{2018}
+{NUXT-PWA. \emph{Nuxt-PWA}. 2018.
+Dispon{\'\i}vel em: \url{https://github.com/nuxt-community/pwa-module}. Acesso
+  em: 12 jun 2018.}
+
+\bibitem[Osmani 2016]{osmani-2016}
+\abntrefinfo{Osmani}{OSMANI}{2016}
+{OSMANI, A. \emph{Offline Storage for Progressive Web Apps}. 2016.
+Dispon{\'\i}vel em:
+  \url{https://medium.com/dev-channel/offline-storage-for-progressive-web-apps-70d52695513c}.
+  Acesso em: 15 out 2017.}
+
+\bibitem[Osmani e Cohen 2017]{osmani-cohen-2017}
+\abntrefinfo{Osmani e Cohen}{OSMANI; COHEN}{2017}
+{OSMANI, A.; COHEN, M. \emph{Armazenamento off-line para Progressive Web Apps}.
+  2017.
+Dispon{\'\i}vel em:
+  \url{https://developers.google.com/web/fundamentals/instant-and-offline/web-storage/offline-for-pwa?hl=pt-br}.
+  Acesso em: 15 out 2017.}
+
+\bibitem[PouchDB 2017]{pouchdb-2017}
+\abntrefinfo{PouchDB}{POUCHDB}{2017}
+{POUCHDB. \emph{Introduction to PouchDB}. 2017.
+Dispon{\'\i}vel em: \url{https://pouchdb.com/guides}. Acesso em: 15 out 2017.}
+
+\bibitem[Prasad 2011]{prasad-2011}
+\abntrefinfo{Prasad}{PRASAD}{2011}
+{PRASAD, A. \emph{Offline Support is Valuable, and You Can't Add it Later}.
+  2011.
+Dispon{\'\i}vel em: \url{http://aanandprasad.com/articles/offline}. Acesso em:
+  2 out 2017.}
+
+\bibitem[Russel 2015]{russel-2015}
+\abntrefinfo{Russel}{RUSSEL}{2015}
+{RUSSEL, A. \emph{Progressive Web Apps\: Escaping Tabs Without Losing Our
+  Soul}. 2015.
+Dispon{\'\i}vel em:
+  \url{https://infrequently.org/2015/06/progressive-apps-escaping-tabs-without-losing-our-soul}.
+  Acesso em: 12 out 2017.}
+
+\bibitem[Smith 2016]{smith-2016}
+\abntrefinfo{Smith}{SMITH}{2016}
+{SMITH, G. \emph{Dexie.js - Because IndexedDB should be Awesome}. 2016.
+Dispon{\'\i}vel em:
+  \url{http://blogs.bytecode.com.au/glen/2016/01/11/dexie.html}. Acesso em: 15
+  out 2017.}
+
+\bibitem[Tabalin 2017]{tabalin-2017}
+\abntrefinfo{Tabalin}{TABALIN}{2017}
+{TABALIN, A. \emph{Create Offline Web Apps Using Service Workers and PouchDB}.
+  2017.
+Dispon{\'\i}vel em:
+  \url{https://www.sitepoint.com/offline-web-apps-service-workers-pouchdb}.
+  Acesso em: 15 out 2017.}
+
+\bibitem[Thygesen 2013]{thygesen-2013}
+\abntrefinfo{Thygesen}{THYGESEN}{2013}
+{THYGESEN, T. \emph{60\% of Apps have never been used. Stats for app producers}.
+  2013.
+Dispon{\'\i}vel em:
+  \url{http://www.tinethygesen.com/post/42502739988/60-of-apps-have-never-been-used-stats-for-app}.
+  Acesso em: 2 out 2017.}
+
+\bibitem[Vue-Router 2017]{vuerouter-2017}
+\abntrefinfo{Vue-Router}{VUE-ROUTER}{2017}
+{VUE-ROUTER. \emph{Getting Started}. 2017.
+Dispon{\'\i}vel em:
+  \url{https://router.vuejs.org/en/essentials/getting-started.html}. Acesso em:
+  31 out 2017.}
+
+\bibitem[Vue.js 2017]{vuejs-2017}
+\abntrefinfo{Vue.js}{VUE.JS}{2017}
+{VUE.JS. \emph{Introduction}. 2017.
+Dispon{\'\i}vel em: \url{https://vuejs.org/v2/guide}. Acesso em: 31 out 2017.}
+
+\bibitem[Vuetify 2017]{vuetify-2017}
+\abntrefinfo{Vuetify}{VUETIFY}{2017}
+{VUETIFY. \emph{Vuetify for Vue.js}. 2017.
+Dispon{\'\i}vel em: \url{https://github.com/vuetifyjs/vuetify}. Acesso em: 31
+  out 2017.}
+
+\bibitem[Webpack 2017]{webpack-2017}
+\abntrefinfo{Webpack}{WEBPACK}{2017}
+{WEBPACK. \emph{Code Splitting}. 2017.
+Dispon{\'\i}vel em: \url{https://webpack.js.org/guides/code-splitting}. Acesso
+  em: 31 out 2017.}
+
+\bibitem[Workbox 2018]{workbox-2018}
+\abntrefinfo{Workbox}{WORKBOX}{2018}
+{WORKBOX. \emph{Workbox}. 2018.
+Dispon{\'\i}vel em: \url{https://developers.google.com/web/tools/workbox/}.
+  Acesso em: 12 jun 2018.}
+
+\bibitem[Yarn 2017]{yarn-2017}
+\abntrefinfo{Yarn}{YARN}{2017}
+{YARN. \emph{Yarn}. 2017.
+Dispon{\'\i}vel em: \url{https://yarnpkg.com}. Acesso em: 10 dez 2017.}
+
+\end{thebibliography}
