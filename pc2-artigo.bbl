@@ -140,6 +140,11 @@ Dispon{\'\i}vel em: \url{https://nodejs.org}. Acesso em: 10 dez 2017.}
 {NPM. \emph{NPM}. 2017.
 Dispon{\'\i}vel em: \url{https://www.npmjs.com/}. Acesso em: 10 dez 2017.}
 
+\bibitem[Nuxt 2017]{nuxt-2017}
+\abntrefinfo{Nuxt}{NUXT}{2017}
+{NUXT. \emph{Nuxt}. 2017.
+Dispon{\'\i}vel em: \url{http://nuxtjs.org}. Acesso em: 14 nov 2017.}
+
 \bibitem[Nuxt-PWA 2018]{nuxt-pwa-2018}
 \abntrefinfo{Nuxt-PWA}{NUXT-PWA}{2018}
 {NUXT-PWA. \emph{Nuxt-PWA}. 2018.
@@ -198,8 +203,8 @@ Dispon{\'\i}vel em:
 
 \bibitem[Thygesen 2013]{thygesen-2013}
 \abntrefinfo{Thygesen}{THYGESEN}{2013}
-{THYGESEN, T. \emph{60\% of Apps have never been used. Stats for app producers}.
-  2013.
+{THYGESEN, T. \emph{60\% of Apps have never been used. Stats for app
+  producers}. 2013.
 Dispon{\'\i}vel em:
   \url{http://www.tinethygesen.com/post/42502739988/60-of-apps-have-never-been-used-stats-for-app}.
   Acesso em: 2 out 2017.}

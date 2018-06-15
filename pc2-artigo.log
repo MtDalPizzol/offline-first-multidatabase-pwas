@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.6.4)  12 JUN 2018 16:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.6.4)  14 JUN 2018 21:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1266,10 +1266,11 @@ Package microtype Info: Loading generic settings for font family
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2] [3]
 LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <10.95> not available
 (Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 260.
+ [4]
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <12> not available
 (Font)              Font shape `T1/lmss/m/sl' tried instead on input line 284.
- [4]
-<figures/ss-falling-back-to-network.png, id=98, 1007.765pt x 497.86pt>
+
+<figures/ss-falling-back-to-network.png, id=96, 1007.765pt x 497.86pt>
 File: figures/ss-falling-back-to-network.png Graphic file (type png)
 
 <use figures/ss-falling-back-to-network.png>
@@ -1281,9 +1282,9 @@ ine 292.
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.318 
-       <./figures/ss-falling-back-to-network.png>] [6] [7]
-<figures/4way-binding.png, id=171, 100.2144pt x 59.0205pt>
+l.309 \end{itemize}
+                    <./figures/ss-falling-back-to-network.png>] [6] [7]
+<figures/4way-binding.png, id=173, 100.2144pt x 59.0205pt>
 File: figures/4way-binding.png Graphic file (type png)
 
 <use figures/4way-binding.png>
@@ -1294,16 +1295,22 @@ Package pdftex.def Info: figures/4way-binding.png used on input line 360.
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.394 
-       <./figures/4way-binding.png>]
-<figures/couchdb-express-proxy-scheme-update.png, id=202, 392.46625pt x 231.866
+l.378 
+       <./figures/4way-binding.png>] [9]
+<figures/couchdb-express-proxy-scheme-update.png, id=213, 392.46625pt x 231.866
 26pt>
 File: figures/couchdb-express-proxy-scheme-update.png Graphic file (type png)
  <use figures/couchdb-express-proxy-scheme-update.png>
 Package pdftex.def Info: figures/couchdb-express-proxy-scheme-update.png used o
 n input line 408.
 (pdftex.def)             Requested size: 255.6026pt x 151.012pt.
- [9]
+ [10pdfTeX warning (ext4): destination with the same identifier (name{figure.0.
+3}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.422 
+       <./figures/couchdb-express-proxy-scheme-update.png>]
 LaTeX Font Info:    Try loading font information for T1+lmtt on input line 425.
 
 
@@ -1314,14 +1321,8 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             `lmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [10pdfTeX warning (ext4): destination with the same identifier (name{figure.0.
-3}) has been already used, duplicate ignored
 
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.426 
-       <./figures/couchdb-express-proxy-scheme-update.png>]
-<figures/riffnailer-sync-database-creation.png, id=223, 819.06pt x 379.4175pt>
+<figures/riffnailer-sync-database-creation.png, id=226, 819.06pt x 379.4175pt>
 File: figures/riffnailer-sync-database-creation.png Graphic file (type png)
 
 <use figures/riffnailer-sync-database-creation.png>
@@ -1333,32 +1334,31 @@ input line 430.
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.441 
+l.439 
        <./figures/riffnailer-sync-database-creation.png>]
-<figures/riffnailer-schedule-flags.png, id=232, 743.77875pt x 478.78876pt>
+<figures/riffnailer-schedule-flags.png, id=234, 743.77875pt x 478.78876pt>
 File: figures/riffnailer-schedule-flags.png Graphic file (type png)
 
 <use figures/riffnailer-schedule-flags.png>
 Package pdftex.def Info: figures/riffnailer-schedule-flags.png used on input li
 ne 447.
 (pdftex.def)             Requested size: 426.0pt x 274.23476pt.
+ [12pdfTeX warning (ext4): destination with the same identifier (name{figure.0.
+5}) has been already used, duplicate ignored
 
-<figures/riffnailer-schedule-flags-sync.png, id=233, 636.3775pt x 505.89pt>
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.452 
+       <./figures/riffnailer-schedule-flags.png>]
+<figures/riffnailer-schedule-flags-sync.png, id=243, 636.3775pt x 505.89pt>
 File: figures/riffnailer-schedule-flags-sync.png Graphic file (type png)
 
 <use figures/riffnailer-schedule-flags-sync.png>
 Package pdftex.def Info: figures/riffnailer-schedule-flags-sync.png used on inp
 ut line 456.
 (pdftex.def)             Requested size: 426.0pt x 338.64348pt.
- [12pdfTeX warning (ext4): destination with the same identifier (name{figure.0.
-5}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.459 
-       <./figures/riffnailer-schedule-flags.png>] [13pdfTeX warning (ext4): des
-tination with the same identifier (name{figure.0.6}) has been already used, dup
-licate ignored
+ [13pdfTeX warning (ext4): destination with the same identifier (name{figure.0.
+6}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
@@ -1378,28 +1378,28 @@ Overfull \hbox (16.78586pt too wide) in paragraph at lines 106--106
 ^_ine-[]data-[]sync-[]in-[]ionic-[]with-[]4-[]way-[]data-[]binding / 
  []
 
-[17]) [18]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 529.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 529.
+[17] [18]) [19]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 528.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 528.
  (./pc2-artigo.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 529.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 529.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 528.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 528.
 Package rerunfilecheck Info: File `pc2-artigo.brf' has not changed.
-(rerunfilecheck)             Checksum: BB4C3B7799D76E7BF17687F4A44C7634;2503.
+(rerunfilecheck)             Checksum: 0C7CA073327F1AD064B273CFDEDC4136;2555.
 
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 529.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 528.
  ) 
 Here is how much of TeX's memory you used:
- 13603 strings out of 493029
- 202220 string characters out of 6136235
- 458873 words of memory out of 5000000
- 16665 multiletter control sequences out of 15000+600000
- 91735 words of font info for 148 fonts, out of 8000000 for 9000
+ 13631 strings out of 493029
+ 202577 string characters out of 6136235
+ 460016 words of memory out of 5000000
+ 16681 multiletter control sequences out of 15000+600000
+ 92250 words of font info for 153 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 39i,11n,35p,1334b,587s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 39i,12n,35p,1334b,601s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/en
 c/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}</usr/s
 hare/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/publi
@@ -1413,10 +1413,10 @@ r/share/texmf/fonts/type1/public/lm/lmsso12.pfb></usr/share/texmf/fonts/type1/p
 ublic/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy6.pfb></usr/sha
 re/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/public/l
 m/lmtt10.pfb>
-Output written on pc2-artigo.pdf (18 pages, 514948 bytes).
+Output written on pc2-artigo.pdf (19 pages, 517258 bytes).
 PDF statistics:
- 510 PDF objects out of 1000 (max. 8388607)
- 453 compressed objects within 5 object streams
- 84 named destinations out of 1000 (max. 500000)
+ 522 PDF objects out of 1000 (max. 8388607)
+ 464 compressed objects within 5 object streams
+ 86 named destinations out of 1000 (max. 500000)
  32447 words of extra memory for PDF output out of 35830 (max. 10000000)
 

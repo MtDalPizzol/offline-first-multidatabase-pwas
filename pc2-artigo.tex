@@ -97,7 +97,7 @@
 % ---
 % Informações de dados para CAPA e FOLHA DE ROSTO
 % ---
-\titulo{Offline-first Multidabase Progressive Web Apps\\ com PouchDB/CouchDB}
+\titulo{Offline-first Multidatabase Progressive Web Apps\\ com PouchDB/CouchDB}
 \autor{Matheus Dal'Pizzol\thanks{\url{matheusdalpizzol@gmail.com}} \and Anubis Graciela de Moraes Rossetto \thanks{\url{anubisrossetto@gmail.com}}}
 \local{Brasil}
 \data{2018}
@@ -183,11 +183,11 @@
 
 % resumo em português
 \begin{resumoumacoluna}
-Este artigo trata do desenvolvimento de Progressive Web Apps (PWAs) valendo-se da abordagem \textit{offline-first}. São discutidos os problemas apresentados por aplicativos móveis nativos e as soluções a eles oferecidas pelas PWAs. Estratégias são apresentadas para a sincronização e seguridade de múltiplos bancos de dados para cada usuário em um SGBD CouchDB em que o PouchDB é utilizado para o armazenamento distribuído de informações nos dispositivos de usuário. Os resultados obtidos através da implementação dessas estratégias em uma aplicação Web são comentados bem como o futuro dessa classe de aplicações.
+Este artigo trata do desenvolvimento de \textit{Progressive Web Apps} (PWAs) valendo-se da abordagem \textit{offline-first}. São discutidos os problemas apresentados por aplicativos móveis nativos e as soluções a eles oferecidas pelas PWAs. Discorre-se a respeito dos mecanismos que viabilizam a execução de aplicações Web em um cenário \textit{offline} e sua integração com a interface nativa dos dispositivos móveis, como os Service Workers e o Web App Manifest. A escolha do PouchDB para o armazenamento local das informações é justificada a partir da análise de ferramentas alternativas à tarefa. Estratégias são apresentadas para a sincronização e seguridade de múltiplos bancos de dados para cada usuário em um SGBD CouchDB. Estas estratégias são implementadas em uma aplicação para o auxílio do estudo de instrumentos musicais que tem por objetivo registrar as seções de prática do estudante para análise, referência futura e visualização do progresso do usuário em seu instrumento. Os resultados obtidos são comentados bem como o futuro das PWAs.
 \vspace{\onelineskip}
 
 \noindent
-\textbf{Palavras-chave}: Progressive Web Apps. Offline-first. PouchDB. Aplicativos Móveis.
+\textbf{Palavras-chave}: Progressive Web Apps. Offline-first. PouchDB. CouchDB. Aplicativos Móveis.
 \end{resumoumacoluna}
 
 % ]  				% FIM DE ARTIGO EM DUAS COLUNAS
@@ -205,7 +205,7 @@ Este artigo trata do desenvolvimento de Progressive Web Apps (PWAs) valendo-se d
 \addcontentsline{toc}{section}{Introdução}
 
 
-Russel e Berriman (2015) cunharam o termo \textit{Progressive Web App} (PWA), com o objetivo de denominar websites que “tomaram as vitaminas certas” \cite{russel-2015} para entregar aos usuários uma experiência mais próxima à oferecida por aplicativos móveis nativos enquanto tiram proveito das vantagens clássicas da plataforma Web. Intencionalmente ou não, o conceito de PWA trouxe à luz o que fora, na verdade, a ideia original para a execução de códigos de terceiros em dispositivos móveis quando do lançamento do iPhone pela Apple, em 2007. A visão original da empresa não contemplava a instalação direta de códigos de terceiros no aparelho. O objetivo era que os aplicativos não fossem mais que aplicações web tradicionais, simplesmente apresentadas de forma distinta daquela consagrada nos navegadores \cite{9to5-2011}.
+Russel e Berriman (2015) cunharam o termo \textit{Progressive Web App} (PWA) com o objetivo de denominar websites que “tomaram as vitaminas certas” \cite{russel-2015} para entregar aos usuários uma experiência mais próxima à oferecida por aplicativos móveis nativos enquanto tiram proveito das vantagens clássicas da plataforma Web. Intencionalmente ou não, o conceito de PWA trouxe à luz o que fora, na verdade, a ideia original para a execução de códigos de terceiros em dispositivos móveis quando do lançamento do iPhone pela Apple, em 2007. A visão original da empresa não contemplava a instalação direta de códigos de terceiros no aparelho. O objetivo era que os aplicativos não fossem mais que aplicações web tradicionais, simplesmente apresentadas de forma distinta daquela consagrada nos navegadores \cite{9to5-2011}.
 
 % Problema
 Muitos aplicativos nativos para dispositivos móveis destinam-se à solução de problemas e usos pontuais. Em função desta pontualidade, vários desses aplicativos acabam ignorados por apresentarem um custo de oportunidade maior que o de soluções alternativas. De fato, estima-se que 20\% dos usuários interessados em um determinado aplicativo desistem da sua instalação a cada etapa deste processo \cite{cselle-2012} e que 60\% dos aplicativos ofertados em \textit{marketplaces} nunca foram sequer baixados \cite{thygesen-2013}. Em outras palavras, do ponto de vista do usuário, o custo de download e o engajamento exigidos por aplicativos nativos para sua instalação permanente no dispositivo é maior que o de soluções que não envolvam o aplicativo. Ainda, aplicativos nativos não são uma proposição barata do ponto de vista dos desenvolvedores, dado que o suporte à diversas plataformas, dispositivos e versões aumentam seus custos e sua distribuição em \textit{marketplaces} depende de processos burocráticos e tediosos \cite{kumar-2016}. Assim, por facilitar usos descompromissados e pontuais, para a maioria dos casos em que se deseja uma interação que não exija um comprometimento demasiado do usuário, a plataforma Web é mais indicada \cite{lopes-2016}.
@@ -231,7 +231,7 @@ Ademais, é preciso entender que o cenário \textit{offline} não é um erro - c
 Dessa forma, o presente estudo objetiva o desenvolvimento de uma PWA capaz de operar completamente \textit{offline}, realizando a replicação das informações geridas para a Nuvem apenas quando houver conexão estável com a Internet. Para isso, visa-se realizar o cacheamento do \textit{app shell} utilizando Service Workers; integrar a aplicação à interface do dispositivo do usuário utilizando um Web App Manifest; realizar o armazenamento de informações primariamente no dispositivo do usuário; e realizar a sincronização de informações entre a Nuvem e os dispositivos de usuários.
 
 % Metodologia
-Perseguindo esses objetivos, é realizada a implementação de uma Single Page Application (SPA) com o uso do \textit{framework} de interfaces Vue.js, a biblioteca de componentes Vuetify e o \textit{framework} de aplicação Nuxt.js. A persistência dos dados a nível local se dá com o uso do PouchDB enquanto seu mecanismo de sincronização envia os dados a um servidor CouchDB. Operações restritas a administradores do CouchDB são realizadas através de um servidor intermediário implementado em Express.js.
+Perseguindo esses objetivos, este trabalho apresenta a implementação de uma \textit{Single Page Application} (SPA) com o uso do \textit{framework} de interfaces Vue.js, a biblioteca de componentes Vuetify e o \textit{framework} de aplicação Nuxt.js. A persistência dos dados a nível local se dá com o uso do PouchDB enquanto seu mecanismo de sincronização envia os dados a um servidor CouchDB. Operações restritas a administradores do CouchDB são realizadas através de um servidor intermediário implementado em Express.js.
 
 O presente estudo trata, em sua primeira parte, sobre a visão original para aplicativos móveis, o surgimento do conceito de PWAs, a simulação da experiência nativa em aplicações Web e a capacitação \textit{offline} dessas aplicações. Em seguida, descreve a finalidade da aplicação desenvolvida e como diferentes problemas relacionados à sincronização de múltiplos bancos de dados são abordados. Por fim, apresenta os resultados obtidos durante o desenvolvimento e tece comentários sobre possíveis melhorias e o futuro dos conceitos analisados.
 
@@ -241,7 +241,7 @@ O presente estudo trata, em sua primeira parte, sobre a visão original para apl
 % ----------------------------------------------------------
 \section{Referencial teórico}
 
-Nesta seção são discutidos os conceitos envolvidos no desenvolvimento de PWAs e o resgate da visão original sobre aplicativos móveis. Também são expostas as ideias fundamentais para aplicações \textit{offline-first} e para sincronização de dados distribuídos nessas aplicações utilizando-se PouchDB \cite{pouchdb-2017} e CouchDB \cite{couchdb-2017}.
+Nesta seção são discutidos os conceitos envolvidos no desenvolvimento de PWAs e o resgate da visão original sobre aplicativos móveis. Em seguida, são apresentados os mecanismos que viabilizam a execução de uma aplicação Web \textit{offline} e sua integração com a interface nativa dos dispositivos, bem como a imitação dessas interfaces na plataforma Web. Por fim, são expostas as ideias fundamentais para aplicações \textit{offline-first} e para sincronização de dados distribuídos nessas aplicações utilizando-se PouchDB \cite{pouchdb-2017} e CouchDB \cite{couchdb-2017}.
 
 \subsection{A visão original para aplicativos móveis e as PWAs}
 
@@ -250,7 +250,7 @@ Ao apresentar o iPhone ao mundo, em 2007, Steve Jobs declarou que os desenvolved
 A afirmação foi ampla e estranhamente ignorada e, em 2008, em resposta aos desenvolvedores, a Apple desviou-se da ideia inicial, dando origem à AppStore \cite{9to5-2011}. Esse acontecimento abriria as portas do prolífero mercado \textit{mobile} dominado pelo iOS e, mais tarde, pelo Android, do Google. Essa reviravolta criou oportunidades na mesma medida em que criou problemas. Como exposto por Alex Russel,
 
 \begin{citacao}
-Ao invés de clicar um link para acessar o conteúdo que você está procurando, esses sistemas fazem das lojas os mediadores das aplicações que, por sua vez, mediam e facilitam a descoberta de conteúdo. O processo de “hibridização” gera aplicações que não vivem mais nas ou com as premissas da Web. Como desenvolvemos para todas essas lojas de uma vez só? [...] Como a obrigatoriedade de empacotamento prévio altera seus pressupostos e infraestrutura? Como a indexação para buscas funciona? É uma troca profunda que favorece o suporte \textit{offline} e as lojas em detrimento da rápida iteração e “linkabilidade. \cite[tradução nossa]{russel-2015}
+Ao invés de clicar um link para acessar o conteúdo que você está procurando, esses sistemas fazem das lojas os mediadores das aplicações que, por sua vez, mediam e facilitam a descoberta de conteúdo. O processo de “hibridização” gera aplicações que não vivem mais nas ou com as premissas da Web. Como desenvolvemos para todas essas lojas de uma vez só? [...] Como a obrigatoriedade de empacotamento prévio altera seus pressupostos e infraestrutura? Como a indexação para buscas funciona? É uma troca profunda que favorece o suporte \textit{offline} e as lojas em detrimento da rápida iteração e “linkabilidade". \cite[tradução nossa]{russel-2015}
 \end{citacao}
 
 Visando alguns desses problemas e aproveitando as melhorias entregues pelas tecnologias web a partir de 2010, Alex Russel e Frances Berriman definiram o conceito de Progressive Web Apps, enumerando as características necessárias à uma aplicação web para que se mantenham as características da Web enquanto se entrega uma experiência de usuário mais próxima à dos aplicativos nativos. Essas aplicações não são empacotadas e não são distribuídas através de lojas, sendo apenas websites que “tomaram as vitaminas certas” \cite{russel-2015}. As características enumeradas são as seguintes:
@@ -317,16 +317,16 @@ Com isso considerado, os Service Workers servem aos propósitos das PWAs em dive
 Quando o assunto é a experiência do usuário, uma aplicação web tradicional peca em diversos aspectos se comparada a aplicativos nativos. Para utilizá-la, o usuário precisa abrir o navegador; digitar o endereço do site; ver uma tela branca enquanto os recursos são carregados pela rede; ter a barra de navegador ocupando espaço na interface. Todos esses são pequenos detalhes que, por mais insignificantes que pareçam, refletem em frustração e abandono dos usuários. É para sanar esses problemas que, em combinação com os Service Workers, hoje dispomos do manifesto dos aplicativos web, ou \textit{Web App Manifest}. Segundo Matt Gaunt e Paul Kinlan,
 
 \begin{citacao}
-	O manifesto dos aplicativos web é um arquivo JSON que permite controlar como o aplicativo web ou site é exibido para o usuário em áreas que normalmente se espera ver aplicativos nativos (por exemplo, a tela inicial de um dispositivo), como definir o que o usuário pode inicializar e o visual durante a inicialização \cite{gaunt-kinlan-2017}
+	O manifesto dos aplicativos web é um arquivo JSON que permite controlar como o aplicativo web ou site é exibido para o usuário em áreas que normalmente se espera ver aplicativos nativos (por exemplo, a tela inicial de um dispositivo), como definir o que o usuário pode inicializar e o visual durante a inicialização. \cite{gaunt-kinlan-2017}
 \end{citacao}
 
 Com algumas poucas propriedades, o \textit{Web App Manifest} permite que integremos nossa aplicação web à interface nativa do dispositivo, incluindo a adição de um ícone de inicialização à \textit{homescreen} deste, provendo ao usuário uma experiência praticamente indistinguível daquela fornecida por aplicativos nativos \cite{lopes-2016}.
 
-Para que uma aplicação web se comporte de maneira visualmente mais próxima de um aplicativo nativo, recomenda-se que ela seja construída na forma de uma SPA \cite{lopes-2016}. \textit{Single Page Applications} são aplicações web que, através do uso de requisições assíncronas - popularmente conhecidas pela sigla AJAX -, permitem que novos dados sejam recebidos de servidores web e apresentados na página já renderizada no navegador do usuário, sem que ele seja obrigado a recarregar a página completamente para visualizar as novas informações. Combinando essa técnica às modernas propriedades CSS de animações e transições, é possível realizar mudanças e trocas suaves entre diferentes componentes da interface gráfica da aplicação, imitando - por vezes de modo muito fiel - a interface gráfica nativa do dispositivo.
+Para que uma aplicação web se comporte de maneira visualmente mais próxima de um aplicativo nativo, recomenda-se que ela seja construída na forma de uma \textit{Single Page Application} (SPA) \cite{lopes-2016}. SPAs são aplicações web que, através do uso de requisições assíncronas - popularmente conhecidas pela sigla AJAX (\textit{Assynchronous JavaScript and XML}) -, permitem que novos dados sejam recebidos de servidores Web e apresentados na página já renderizada no navegador do usuário, sem que ele seja obrigado a recarregar a página completamente para visualizar as novas informações. Combinando essa técnica às modernas propriedades CSS (\textit{Cascading Style Sheets}) de animações e transições, é possível realizar mudanças e trocas suaves entre diferentes componentes da interface gráfica da aplicação, imitando - por vezes de modo muito fiel - a interface gráfica nativa do dispositivo.
 
-Com tudo isso considerado, podemos nos voltar à escolha das ferramentas para a obtenção desses fins. Aqui, entram em cena as bibliotecas Vue.js \cite{vuejs-2017}, vue-router \cite{vuerouter-2017} e Vuetify \cite{vuetify-2017}, além do \textit{bundler} Webpack \cite{webpack-2017}.
+Algumas ferramentas auxiliam na obtenção de uma aplicação que disponha de todos esses benefícios, como no causo do Vue.js \cite{vuejs-2017}, vue-router \cite{vuerouter-2017} e Vuetify \cite{vuetify-2017}, além do \textit{bundler} Webpack \cite{webpack-2017} e do \textit{framework} de aplicação Nuxt.js \cite{nuxt-2017}.
 
-Enquanto o Vue.js pode ser descrito como um \textit{framework} para a construção de interfaces de usuários, o vue-router permite a especificação de componentes Vue.js a serem exibidos quando a URL do navegador corresponder à URL configurada para o componente em questão. Essa configuração pode, então, ser combinada com o empacotamento e separação de código (\textit{Code Splitting}) realizados pelo Webpack. Assim, cada conjunto de componentes definidos para uma determinada URL pode ser empacotado em um único arquivo JavaScript a ser carregado sob demanda, quando houver a correspondência da URL acessada no navegador. Dessa forma, a obtenção de uma SPA torna-se relativamente simples.
+Enquanto o Vue.js pode ser descrito como um \textit{framework} para a construção de interfaces de usuários, o vue-router permite a especificação de componentes Vue.js a serem exibidos quando a URL do navegador corresponder à URL configurada para o componente em questão. Essa configuração pode, então, ser combinada com o empacotamento e separação de código (\textit{Code Splitting}) realizados pelo Webpack. Assim, cada conjunto de componentes definidos para uma determinada URL pode ser empacotado em um único arquivo JavaScript a ser carregado sob demanda, quando houver a correspondência da URL acessada no navegador. Dessa forma, a obtenção de uma SPA é facilitada. Já o Nuxt.js pode ser descrito como um \textit{framework} de aplicação, mas no fundo, ele consiste de uma série de configurações para Webpack que atendem diversas finalidades, incluindo o preprocessamento de CSS, a compilação de \textit{Single File Components} do Vue.js, a realização do \textit{Code Splitting} e a organização do código fonte.
 
 Para completar a simulação da experiência nativa, o Vuetify oferece componentes Vue.js que utilizam o Material Design \cite{material-design-2018}, do Google, a mesma linguagem visual utilizada pelos dispositivos Android, possibilitando a criação de interfaces extremamente fiéis ao visual e à experiência desses dispositivos.
 
@@ -339,7 +339,7 @@ Apesar dos Service Workers possibilitarem a operação \textit{offline} do \text
 
 Dentre as diversas opções para o armazenamento local de informações estão a \textit{Local Storage}, a \textit{Session Storage} e o WebSQL. Todos esses, porém, apresentam problemas como pouco suporte pelos navegadores, limitações graves de espaço em memória, incompatibilidade com Web Workers e funcionamento síncrono bloqueante \cite{osmani-cohen-2017}.
 
-A recomendação atual para o armazenamento local das informações, então, é o IndexedDB \cite{osmani-cohen-2017}. Essa especificação dispõe de bastante espaço na memória, suporta transações, pode ser usada com segurança em diversas abas do navegador simultaneamente e é suportada por todos os navegadores modernos \cite{tabalin-2017}. No entanto, a complexidade de algumas funcionalidade oferecidas pelo IndexedDB implica na complexidade de sua API que, somada à inexistência de suporte ao padrão Promises/A+, dificulta sua utilização pelos desenvolvedores \cite{osmani-2016}. A API do IndexedDB é de tão baixo nível que até mesmo a documentação da Mozilla Developer Network (MDN) alerta os desenvolvedores a esse respeito e recomenda o uso de uma biblioteca \textit{wrapper} para facilitar sua manipulação \cite{smith-2016}.
+A recomendação atual para o armazenamento local das informações, então, é o IndexedDB \cite{osmani-cohen-2017}. Essa especificação dispõe de bastante espaço na memória, suporta transações, pode ser usada com segurança em diversas abas do navegador simultaneamente e é suportada por todos os navegadores modernos \cite{tabalin-2017}. No entanto, a complexidade de algumas funcionalidades oferecidas pelo IndexedDB implica na complexidade de sua API que, somada à inexistência de suporte ao padrão Promises/A+, dificulta sua utilização pelos desenvolvedores \cite{osmani-2016}. A API do IndexedDB é de tão baixo nível que até mesmo a documentação da Mozilla Developer Network (MDN) alerta os desenvolvedores a esse respeito e recomenda o uso de uma biblioteca \textit{wrapper} para facilitar sua manipulação \cite{smith-2016}.
 
 No entanto, quase a totalidade dessas bibliotecas, à notória exceção do PouchDB, preocupa-se exclusivamente com o armazenamento local, desconsiderando a possível inserção da aplicação em um contexto distribuído e delegando ao desenvolver o tratamento da coesão, replicação e sincronização das bases de dados.
 
@@ -367,12 +367,12 @@ Na Figura 2, podemos verificar a arquitetura de vinculação de dados em quatro 
 % -----------
 \section{Metodologia}
 
-Nesta seção são expostas as ideias aplicadas na implementação da aplicação proposta. São discutidas questões de segurança, arquitetura e interface.
+Esta seção discorre sobre a finalidade da aplicação implementada no estudo dos conceitos apresentados e expõe a forma com que os Service Workers e o Web App Manifest foram a ela adicionados. A subseção sobre segurança e arquitetura apresenta as soluções encontradas para problemas gerados pelas limitações das ferramentas utilizadas, indo desde a criação de bancos de dados isolados para cada usuário, sua autenticação e autorização até a criação programática e sincronização de novos bancos no lado servidor por parte desses usuários. A seção é finalizada com a elucidação do mecanismo utilizado para contornar o problema do limite de requisições paralelas em navegadores Web e manter sincronizados os bancos de dados criados pelos usuários da forma mais transparente possível.
 
 % ------------------------------------
 % Metodologia: Finalidade da aplicação
 % ------------------------------------
-\subsection{Finalidade da aplciação}
+\subsection{Finalidade da aplicação}
 
 A implementação dos conceitos estudados destina-se a uma aplicação para auxílio no estudo de instrumentos musicais. O sistema permite que um usuário registre suas sessões de prática para que, mais tarde, possa visualizar sua evolução. O usuário pode dispor de diversas agendas de treinamento as quais podem conter diversos exercícios (licks). Toda vez que o usuário pratica um exercício, a aplicação registra a duração do exercício, a variação do exercício utilizada - se houver -, a velocidade utilizada em batidas por minuto (BPM) e um \textit{feedback} sobre a execução do exercício para referência futura. No futuro, o usuário deve poder convidar outros usuários para participar de uma mesma agenda de treinamento.
 
@@ -381,9 +381,9 @@ A implementação dos conceitos estudados destina-se a uma aplicação para aux�
 % -----------------------------------------------
 \subsection{Service Workers e Web App Manifest}
 
-O Nuxt.js facilita a criação de Service Workers e do Web App Manifest, atendendo algumas das exigências das PWAs. Para isso, foi preciso instalar e configurar o módulo do \textit{framework} para PWAs \cite{nuxt-pwa-2018}. O módulo está disponível por gerenciadores de pacotes como a NPM \cite{npm-2017} e o Yarn \cite{yarn-2017}, o que tornou o processo bastante simples e rápido.
+O Nuxt.js facilita a criação de Service Workers e do Web App Manifest, atendendo algumas das exigências das PWAs. Para isso, foi preciso instalar e configurar o módulo do \textit{framework} para PWAs \cite{nuxt-pwa-2018}. O módulo está disponível por gerenciadores de pacotes como o NPM \cite{npm-2017} e o Yarn \cite{yarn-2017}, o que tornou o processo bastante rápido e direto.
 
-O módulo é composto por vários outros submódulos destinados a diferentes finalidades. Um destaque interessante é o Workbox \cite{workbox-2018}, que além de gerar os Service Workers para realizar o cacheamento da aplicação e permitir seu uso \textit{offline}, oferece outros serviços, como o Offline Analytics, que captura os dados de acesso à aplicação mesmo enquanto offline e os envia para a conta do Google Analytics quando houver conexão com a Internet.
+O módulo é composto por vários outros submódulos destinados a diferentes finalidades. Um destaque interessante é o Workbox \cite{workbox-2018}, que além de gerar os Service Workers para realizar o cacheamento da aplicação e permitir seu uso \textit{offline}, oferece outros serviços, como o Offline Analytics, que captura os dados de acesso à aplicação mesmo enquanto \textit{offline} e os envia para a conta do Google Analytics quando houver conexão com a Internet.
 
 % ------------------------------------
 % Metodologia: Segurança e arquitetura
@@ -400,13 +400,13 @@ Efetuado o login, o usuário passa a poder criar novas agendas de treinamento a 
 
 \subsubsection{Autenticação e autorização}
 
-O CouchDB oferece não só a camada de armazenamento de dados, mas também um serviço RESTful para acesso e manipulação das informações, juntamente com um \textit{framework} de autenticação e autorização \textit{built-in}. O uso desse \textit{framework} é mandatório para que se possa tirar vantagem das funcionalidades de sincronização dessa tecnologia - é preciso que os dispositivos clientes tenham comunicação direta com o servidor  do CouchDB para que mantenham os dados em sincronia. Por outro lado, algumas ações só podem ser realizadas por administradores do CouchDB, como, por exemplo, criar novos bancos de dados ou gerenciar o nível de acesso dos usuários. Como algumas dessas ações terão de ser executadas programaticamente, segundo a demanda dos dispositivos clientes, é necessário um servidor intermediário que detenha acesso de nível administrador ao CouchDB. Esse servidor é implementado utilizando Node.js \cite{node-2017} e o \textit{framework} de HTTP Express.js \cite{express-2017}. A ideia é representada na Figura 3.
+O CouchDB oferece não só a camada de armazenamento de dados, mas também um serviço RESTful para acesso e manipulação das informações, juntamente com um \textit{framework} de autenticação e autorização \textit{built-in}. O uso desse \textit{framework} é mandatório para que se possa tirar vantagem das funcionalidades de sincronização dessa tecnologia - é preciso que os dispositivos clientes tenham comunicação direta com o servidor  do CouchDB para que mantenham os dados em sincronia. Por outro lado, algumas ações só podem ser realizadas por administradores do CouchDB, como, por exemplo, criar novos bancos de dados ou gerenciar o nível de acesso dos usuários. Como algumas dessas ações terão de ser executadas programaticamente, segundo a demanda dos dispositivos clientes, é necessário um servidor intermediário que detenha acesso de nível administrador ao CouchDB. Esse servidor é implementado utilizando Node.js \cite{node-2017} e o \textit{framework} de HTTP Express.js \cite{express-2017}. A arquitetura é representada na Figura 3.
 
 \begin{figure}[H]
 	\centering
 	\caption{Arquitetura de autenticação paralela para CouchDB com Express.js}
 	\includegraphics[width=0.6\textwidth]{figures/couchdb-express-proxy-scheme-update}
-	\legend{Fonte: Própria, 2017}
+	\legend{Fonte: Do autor, 2017}
 \end{figure}
 
 Nessa arquitetura, enquanto o \textit{framework} de autenticação do CouchDB fornece autenticação por \textit{tokens} baseada em \textit{cookies}, a autenticação no servidor Express.js pode ser realizada através de \textit{JSON Web Tokens} (JWT) \cite{jwt-2017}. Assim, ao realizar o login na aplicação, o dispositivo realiza a requisição de dois \textit{tokens} em paralelo - ambos com os mesmos critérios de expiração -, uma para cada servidor. Mantém-se assim o contato direto do dispositivo do cliente com o servidor CouchDB e possibilita-se a execução programática de operações restritas a administradores através do servidor intermediário. É interessante que não necessariamente ambas as autenticações precisam ser bem sucedidas para que usuário possa utilizar a aplicação, dado que cada um dos \textit{tokens} dá acesso a serviços distintos. Portanto, no caso de um dos serviços encontrar-se \textit{offline}, o usuário simplesmente terá algumas das funções da aplicação temporariamente indisponíveis.
@@ -418,7 +418,7 @@ Nessa arquitetura, enquanto o \textit{framework} de autenticação do CouchDB fo
 
 Apesar do protocolo de replicação do CoucDB e o PouchDB ser projetado para a sincronização de informações contidas em um determinado banco de dados, eles não oferecem nenhuma alternativa que sincronize a criação de novos bancos de dados. Além disso, em nosso caso de uso, é necessário que as informações de permissões de acesso a determinados bancos de dados também sejam sincronizadas. Como mencionado anteriormente, novos bancos de dados e a modificação das permissões de acesso a esses bancos precisam ser feitas por administradores do CouchDB, portanto, através do servidor Express.js.
 
-A questão torna-se, então: quando realizar essas requisições ao serviço Express.js, visto que, diferentemente do PouchDB, esse serviço não dispõe de um sistema em tempo real? E ainda, como manter uma lista atualizada das contas financeiras de um usuário, dado que esse usuário pode, inclusive, criar novas agendas, deleta-las ou compartilha-las com outros usuários enquanto estiver \textit{offline}? Ou seja, para que uma nova agenda tenha seu respectivo banco criado no servidor, excluído ou alterado, é necessário ter conhecimento de duas variáveis principais: o \textit{status} da conexão e o \textit{status} da autenticação.
+A questão torna-se, então: quando realizar essas requisições ao serviço Express.js, visto que, diferentemente do PouchDB, esse serviço não dispõe de um sistema em tempo real? E ainda, como manter uma lista atualizada das contas financeiras de um usuário, dado que esse usuário pode, inclusive, criar novas agendas, deletá-las ou compartilhá-las com outros usuários enquanto estiver \textit{offline}? Ou seja, para que uma nova agenda tenha seu respectivo banco criado no servidor, excluído ou alterado, é necessário ter conhecimento de duas variáveis principais: o \textit{status} da conexão e o \textit{status} da autenticação.
 
 Como a sincronização do banco privado do usuário depende tanto de conexão com a internet, quanto de autenticação, o melhor momento para a realização dessas operações acontece quando um evento de sincronização bem sucedida é disparado.
 
@@ -428,7 +428,7 @@ Assim, a solução proposta é que cada usuário mantenha uma lista de descriç�
 	\centering
 	\caption{Diagrama do mecanismo de sincronização de agendas de treino e suas permissões}
 	\includegraphics[width=1\textwidth]{figures/riffnailer-sync-database-creation}
-	\legend{Fonte: Própria, 2017}
+	\legend{Fonte: Do autor, 2017}
 \end{figure}
 
 É preciso considerar que a requisição em questão pode ser falha e que o serviço intermediário não dispõe de sincronização contínua. Também não é possível assumir que um novo evento \textit{change} contendo um mesmo documento descritor irá ocorrer em um momento futuro. Nesse caso, é preciso informar ao usuário e fornecer meios para que realize essa requisição em outro momento. Algo como “Não foi possível realizar o backup dos seus dados. Tentar novamente”.
@@ -445,7 +445,7 @@ Para minimizar o problema, foi implementado um mecanismo de \textit{flags} que s
 	\centering
 	\caption{Diagrama do mecanismo de sinalização de modificação \textit{offline} de agendas}
 	\includegraphics[width=1\textwidth]{figures/riffnailer-schedule-flags}
-	\legend{Fonte: Própria, 2017}
+	\legend{Fonte: Do autor, 2017}
 \end{figure}
 
 Após, observam-se alguns eventos que, quando disparados, realizam a sincronização das agendas da pilha em \textit{background}, respeitando o limite de requisições paralelas definido pelo desenvolvedor. A Figura 6 ilustra a ideia.
@@ -454,7 +454,7 @@ Após, observam-se alguns eventos que, quando disparados, realizam a sincroniza�
 	\centering
 	\caption{Diagrama do mecanismo de sincronização em \textit{background}}
 	\includegraphics[width=1\textwidth]{figures/riffnailer-schedule-flags-sync}
-	\legend{Fonte: Própria, 2017}
+	\legend{Fonte: Do autor, 2017}
 \end{figure}
 
 % ---
@@ -484,9 +484,9 @@ Atualmente, a abordagem \textit{multidabase} é a única a capaz de manter verda
 
 Essa abordagem \textit{multidatabase} também apresenta desafios de arquitetura para a aplicação que devem ser cuidadosamente ponderados. Como cada usuário e cada agenda de treino detém seus bancos de dados isolados, a manutenção de \textit{Design Documents} precisa atentar ao suporte retroativo e deve ser realizada através da atualização da aplicação nos dispositivos de usuários, já que realizá-la diretamente no servidor CouchDB implicaria na atualização de todos os bancos de dados manualmente ou através de um \textit{script} que varresse todo o SGBD realizando as alterações.
 
-Quando tratamos de performance. a ideia de uma enorme quantidade de bancos de dados pode representar problemas que dependerão do tipo de hardware e do sistema operacional utilizados para o servidor CouchDB. Isso se deve ao fato de que requisições ao CouchDB dependem do quão rápido o sistema operacional consegue encontrar, abrir, acessar e fechar os arquivos do banco de dados. Também podem ocorrer problemas em relação à nomenclatura dos bancos já que caracteres especiais pode influenciar a estrutura de pastas do sistema operacional. Por essas razões, torna-se interessante o uso de serviços focados no escalonamento \textit{multidatabase}, como o Cloudant, da IBM, em detrimento de uma instalação nativa do CouchDB.
+Quando tratamos de performance, a ideia de uma enorme quantidade de bancos de dados pode representar problemas que dependerão do tipo de hardware e do sistema operacional utilizados para o servidor CouchDB. Isso se deve ao fato de que requisições ao CouchDB dependem do quão rápido o sistema operacional consegue encontrar, abrir, acessar e fechar os arquivos do banco de dados. Também podem ocorrer problemas em relação à nomenclatura dos bancos já que caracteres especiais pode influenciar a estrutura de pastas do sistema operacional. Por essas razões, torna-se interessante o uso de serviços focados no escalonamento \textit{multidatabase}, como o Cloudant, da IBM, em detrimento de uma instalação nativa do CouchDB.
 
-Por fim, independentemente do uso do par PouchDB/CouchDB ou de qualquer outra ferramenta alternativa dedicada aos objetivos deste estudo, o conceito das PWAs coloca-se como uma alternativa viável e extremamente atrativa aos aplicativos nativos, sendo eles de uso pontual ou não. A distribuição fácil proporcionada pela web, a ausência de processos de empacotamento em executáveis de instalação dependentes de versões de sistemas operacionais e a proximidade da experiencia nativa obtida com as novas tecnologias Web parecem dar inicio a um movimento em direção à obsolescência dos aplicativos nativos.
+Por fim, independentemente do uso do par PouchDB/CouchDB ou de qualquer outra ferramenta alternativa dedicada aos objetivos deste estudo, o conceito das PWAs coloca-se como uma alternativa viável e extremamente atrativa aos aplicativos nativos, sendo eles de uso pontual ou não. A distribuição fácil proporcionada pela web, a ausência de processos de empacotamento em executáveis de instalação dependentes de versões de sistemas operacionais e a proximidade da experiência nativa obtida com as novas tecnologias Web parecem dar início a um movimento em direção à obsolescência dos aplicativos nativos.
 
 % ----------------------------------------------------------
 % ELEMENTOS PÓS-TEXTUAIS
@@ -500,7 +500,7 @@ Por fim, independentemente do uso do par PouchDB/CouchDB ou de qualquer outra fe
 % \twocolumn[    		% INICIO DE ARTIGO EM DUAS COLUNAS
 
 % titulo em inglês
-\titulo{Canonical academic article model with \abnTeX}
+\titulo{Offline-first Multidatabase Progressive Web Apps with PouchDB/CouchDB}
 \emptythanks
 \maketitle
 
@@ -508,13 +508,12 @@ Por fim, independentemente do uso do par PouchDB/CouchDB ou de qualquer outra fe
 \renewcommand{\resumoname}{Abstract}
 \begin{resumoumacoluna}
  \begin{otherlanguage*}{english}
-   According to ABNT NBR 6022:2003, an abstract in foreign language is a back
-   matter mandatory element.
+   This article 
 
    \vspace{\onelineskip}
  
    \noindent
-   \textbf{Keywords}: latex. abntex.
+   \textbf{Keywords}: Progressive Web Apps. Offline-firts. PouchDB. CouchDB. Mobile Apps.
  \end{otherlanguage*}  
 \end{resumoumacoluna}
 
