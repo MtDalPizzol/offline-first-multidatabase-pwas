@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.6.4)  18 JUN 2018 13:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.6.4)  19 JUN 2018 09:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1368,27 +1368,27 @@ Overfull \hbox (16.78586pt too wide) in paragraph at lines 106--106
  []
 
 [17] [18]) [19]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 528.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 528.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 533.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 533.
  (./pc2-artigo.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 528.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 528.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 533.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 533.
 Package rerunfilecheck Info: File `pc2-artigo.brf' has not changed.
 (rerunfilecheck)             Checksum: 0C7CA073327F1AD064B273CFDEDC4136;2555.
 
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 528.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 533.
  ) 
 Here is how much of TeX's memory you used:
- 13586 strings out of 493029
- 201876 string characters out of 6136235
- 460016 words of memory out of 5000000
+ 13592 strings out of 493029
+ 201938 string characters out of 6136235
+ 459016 words of memory out of 5000000
  16641 multiletter control sequences out of 15000+600000
- 91808 words of font info for 152 fonts, out of 8000000 for 9000
+ 92057 words of font info for 155 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 39i,12n,35p,1334b,601s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 39i,12n,35p,1334b,597s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/en
 c/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}</usr/s
 hare/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/publi
@@ -1401,7 +1401,7 @@ e1/public/lm/lmss10.pfb></usr/share/texmf/fonts/type1/public/lm/lmss12.pfb></us
 r/share/texmf/fonts/type1/public/lm/lmsso12.pfb></usr/share/texmf/fonts/type1/p
 ublic/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy6.pfb></usr/sha
 re/texmf/fonts/type1/public/lm/lmsy8.pfb>
-Output written on pc2-artigo.pdf (19 pages, 495233 bytes).
+Output written on pc2-artigo.pdf (19 pages, 496405 bytes).
 PDF statistics:
  518 PDF objects out of 1000 (max. 8388607)
  461 compressed objects within 5 object streams
