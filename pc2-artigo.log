@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.6.4)  1 JUL 2018 20:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.6.4)  3 JUL 2018 18:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -39,8 +39,8 @@ Package ifluatex Info: LuaTeX not detected.
 \trimtop=\skip46
 \trimedge=\skip47
 
-(/usr/share/texlive/texmf-dist/tex/latex/memoir/mem11.clo
-File: mem11.clo 2008/01/30 v0.3 memoir class 11pt size option
+(/usr/share/texlive/texmf-dist/tex/latex/memoir/mem12.clo
+File: mem12.clo 2010/10/19 v0.4b memoir class 12pt size option
 )
 \binding=\skip48
 \spinemargin=\skip49
@@ -519,19 +519,19 @@ LaTeX Info: Redefining \addtolength on input line 81.
 Stock height and width: 845.04684pt by 597.50787pt
 Top and edge trims: 0pt and 0pt
 Page height and width: 845.04684pt by 597.50787pt
-Text height and width: 704.60031pt by 455pt
+Text height and width: 708pt by 455pt
 Spine and edge margins: 85.35826pt and 56.9055pt
-Upper and lower margins: 85.35826pt and 55.08827pt
-Headheight and headsep: 13.6pt and 19.8738pt
-Footskip: 27.46295pt
+Upper and lower margins: 85.35826pt and 51.68858pt
+Headheight and headsep: 14.5pt and 19.8738pt
+Footskip: 30pt
 Columnsep and columnseprule: 10pt and 0pt
 Marginparsep and marginparwidth: 7pt and 42.9055pt
-Sidecapsep and sidecapwidth: 7pt and 49pt
-Sidebarhsep and sidebarwidth: 7pt and 49pt
-Sidebarvsep and sidebartopsep: 13.6pt and 0pt
-Sidebarheight: 594.32022pt
-Sidefoothsep and sidefootwidth: 7pt and 49pt
-Sidefootvsep and sidefootheight: 13.6pt and 594.32022pt
+Sidecapsep and sidecapwidth: 7pt and 42pt
+Sidebarhsep and sidebarwidth: 7pt and 42pt
+Sidebarvsep and sidebartopsep: 14.5pt and 0pt
+Sidebarheight: 590.14995pt
+Sidefoothsep and sidefootwidth: 7pt and 42pt
+Sidefootvsep and sidefootheight: 14.5pt and 590.14995pt
 ******************************************************
 
 \c@abntex@bookmarkcounter=\count155
@@ -1109,19 +1109,19 @@ Writing index file pc2-artigo.idx
 Stock height and width: 845.04684pt by 597.50787pt
 Top and edge trims: 0pt and 0pt
 Page height and width: 845.04684pt by 597.50787pt
-Text height and width: 670.8706pt by 426pt
+Text height and width: 677.79506pt by 426pt
 Spine and edge margins: 85.35826pt and 85.35826pt
-Upper and lower margins: 85.35826pt and 88.81798pt
-Headheight and headsep: 13.6pt and 19.8738pt
-Footskip: 27.46295pt
+Upper and lower margins: 85.35826pt and 81.89352pt
+Headheight and headsep: 14.5pt and 19.8738pt
+Footskip: 30pt
 Columnsep and columnseprule: 10pt and 0pt
 Marginparsep and marginparwidth: 7pt and 71.35826pt
-Sidecapsep and sidecapwidth: 7pt and 49pt
-Sidebarhsep and sidebarwidth: 7pt and 49pt
-Sidebarvsep and sidebartopsep: 13.6pt and 0pt
-Sidebarheight: 594.32022pt
-Sidefoothsep and sidefootwidth: 7pt and 49pt
-Sidefootvsep and sidefootheight: 13.6pt and 594.32022pt
+Sidecapsep and sidecapwidth: 7pt and 42pt
+Sidebarhsep and sidebarwidth: 7pt and 42pt
+Sidebarvsep and sidebartopsep: 14.5pt and 0pt
+Sidebarheight: 590.14995pt
+Sidefoothsep and sidefootwidth: 7pt and 42pt
+Sidefootvsep and sidefootheight: 14.5pt and 590.14995pt
 ******************************************************
 
 (./pc2-artigo.aux)
@@ -1232,24 +1232,22 @@ LaTeX Font Info:    Try loading font information for OMX+lmex on input line 183
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 183.
+(Font)              <14.4> on input line 183.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 183.
+(Font)              <10> on input line 183.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 183.
+(Font)              <7> on input line 183.
 LaTeX Font Info:    Try loading font information for OMS+lmr on input line 183.
 
 
 (/usr/share/texmf/tex/latex/lm/omslmr.fd
 File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <8> not available
+LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <10> not available
 (Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 183.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 183.
-LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <5> on input line 183.
-LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <6> not available
+LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <7> not available
 (Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 183.
 LaTeX Font Info:    Try loading font information for T1+lmss on input line 186.
 
@@ -1264,95 +1262,96 @@ Package microtype Info: Loading generic settings for font family
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2] [3]
-LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <10.95> not available
+LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 260.
  [4]
-LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <12> not available
+LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <14.4> not available
 (Font)              Font shape `T1/lmss/m/sl' tried instead on input line 284.
 
-<figures/ss-falling-back-to-network.png, id=108, 1007.765pt x 497.86pt>
+<figures/ss-falling-back-to-network.png, id=107, 1007.765pt x 497.86pt>
 File: figures/ss-falling-back-to-network.png Graphic file (type png)
 
 <use figures/ss-falling-back-to-network.png>
 Package pdftex.def Info: figures/ss-falling-back-to-network.png used on input l
 ine 292.
 (pdftex.def)             Requested size: 255.6026pt x 126.2727pt.
- [5pdfTeX warning (ext4): destination with the same identifier (name{figure.0.1
-}) has been already used, duplicate ignored
+ [5] [6pdfTeX warning (ext4): destination with the same identifier (name{figure
+.0.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.309 \end{itemize}
-                    <./figures/ss-falling-back-to-network.png>] [6] [7]
-<figures/4way-binding.png, id=176, 100.2144pt x 59.0205pt>
+l.321 \end{citacao}
+                    <./figures/ss-falling-back-to-network.png>] [7] [8]
+<figures/4way-binding.png, id=182, 100.2144pt x 59.0205pt>
 File: figures/4way-binding.png Graphic file (type png)
 
 <use figures/4way-binding.png>
 Package pdftex.def Info: figures/4way-binding.png used on input line 360.
 (pdftex.def)             Requested size: 255.6026pt x 150.55153pt.
- [8pdfTeX warning (ext4): destination with the same identifier (name{figure.0.2
+ [9pdfTeX warning (ext4): destination with the same identifier (name{figure.0.2
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.378 
-       <./figures/4way-binding.png>] [9]
-<figures/couchdb-express-proxy-scheme-update.png, id=214, 392.46625pt x 231.866
+l.385 
+       <./figures/4way-binding.png>] [10]
+<figures/couchdb-express-proxy-scheme-update.png, id=218, 392.46625pt x 231.866
 26pt>
 File: figures/couchdb-express-proxy-scheme-update.png Graphic file (type png)
  <use figures/couchdb-express-proxy-scheme-update.png>
 Package pdftex.def Info: figures/couchdb-express-proxy-scheme-update.png used o
 n input line 408.
 (pdftex.def)             Requested size: 255.6026pt x 151.012pt.
- [10pdfTeX warning (ext4): destination with the same identifier (name{figure.0.
+ [11pdfTeX warning (ext4): destination with the same identifier (name{figure.0.
 3}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.422 
+l.420 
        <./figures/couchdb-express-proxy-scheme-update.png>]
-<figures/riffnailer-sync-database-creation.png, id=226, 819.06pt x 379.4175pt>
+<figures/riffnailer-sync-database-creation.png, id=230, 819.06pt x 379.4175pt>
 File: figures/riffnailer-sync-database-creation.png Graphic file (type png)
 
 <use figures/riffnailer-sync-database-creation.png>
 Package pdftex.def Info: figures/riffnailer-sync-database-creation.png used on 
 input line 430.
 (pdftex.def)             Requested size: 426.0pt x 197.34454pt.
- [11pdfTeX warning (ext4): destination with the same identifier (name{figure.0.
-4}) has been already used, duplicate ignored
+ [12] [13pdfTeX warning (ext4): destination with the same identifier (name{figu
+re.0.4}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.439 
+l.443 
        <./figures/riffnailer-sync-database-creation.png>]
-<figures/riffnailer-schedule-flags.png, id=233, 743.77875pt x 478.78876pt>
+<figures/riffnailer-schedule-flags.png, id=243, 743.77875pt x 478.78876pt>
 File: figures/riffnailer-schedule-flags.png Graphic file (type png)
 
 <use figures/riffnailer-schedule-flags.png>
 Package pdftex.def Info: figures/riffnailer-schedule-flags.png used on input li
 ne 447.
 (pdftex.def)             Requested size: 426.0pt x 274.23476pt.
- [12pdfTeX warning (ext4): destination with the same identifier (name{figure.0.
-5}) has been already used, duplicate ignored
 
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.452 
-       <./figures/riffnailer-schedule-flags.png>]
-<figures/riffnailer-schedule-flags-sync.png, id=242, 636.3775pt x 505.89pt>
+<figures/riffnailer-schedule-flags-sync.png, id=244, 636.3775pt x 505.89pt>
 File: figures/riffnailer-schedule-flags-sync.png Graphic file (type png)
 
 <use figures/riffnailer-schedule-flags-sync.png>
 Package pdftex.def Info: figures/riffnailer-schedule-flags-sync.png used on inp
 ut line 456.
 (pdftex.def)             Requested size: 426.0pt x 338.64348pt.
- [13pdfTeX warning (ext4): destination with the same identifier (name{figure.0.
-6}) has been already used, duplicate ignored
+ [14pdfTeX warning (ext4): destination with the same identifier (name{figure.0.
+5}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.459 
+       <./figures/riffnailer-schedule-flags.png>] [15pdfTeX warning (ext4): des
+tination with the same identifier (name{figure.0.6}) has been already used, dup
+licate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.472 
-       <./figures/riffnailer-schedule-flags-sync.png>] [14] [15]
+       <./figures/riffnailer-schedule-flags-sync.png>] [16] [17]
 (./pc2-artigo.bbl (./pc2-artigo.brf)
 \tf@brf=\write5
 \openout5 = `pc2-artigo.brf'.
@@ -1360,21 +1359,31 @@ l.472
 
 bibitemlist
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 15.
-[16]
-Overfull \hbox (16.78586pt too wide) in paragraph at lines 106--106
-\T1/lmr/m/n/10.95 (-20) intro-[]pouchdb-[]unroll-[]couchbase-[]crust-[]and-[]o^
-^_ine-[]data-[]sync-[]in-[]ionic-[]with-[]4-[]way-[]data-[]binding / 
+(Font)              <12> on input line 15.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <8> on input line 15.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <6> on input line 15.
+[18]
+Underfull \hbox (badness 1019) in paragraph at lines 106--106
+\T1/lmr/m/n/12 (+20) Dis-po-ní-vel em: [][]$<[]https : / / blog . knoldus . com
+ / 2016 / 01 / 08 / 
  []
 
-[17] [18]) [19]
+
+Overfull \hbox (48.49677pt too wide) in paragraph at lines 106--106
+\T1/lmr/m/n/12 (-20) intro-[]pouchdb-[]unroll-[]couchbase-[]crust-[]and-[]o^^_i
+ne-[]data-[]sync-[]in-[]ionic-[]with-[]4-[]way-[]data-[]binding / 
+ []
+
+[19] [20]) [21]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 533.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 533.
  (./pc2-artigo.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 533.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 533.
 Package rerunfilecheck Info: File `pc2-artigo.brf' has not changed.
-(rerunfilecheck)             Checksum: 5434AEDC40F5F198DDA488853972016F;2561.
+(rerunfilecheck)             Checksum: 119E1A27E2FDD2406A6BC060717DF285;2565.
 
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
@@ -1382,29 +1391,28 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 533.
  ) 
 Here is how much of TeX's memory you used:
- 13592 strings out of 493029
- 201940 string characters out of 6136235
- 459016 words of memory out of 5000000
- 16641 multiletter control sequences out of 15000+600000
- 92104 words of font info for 155 fonts, out of 8000000 for 9000
+ 13619 strings out of 493029
+ 202316 string characters out of 6136235
+ 458035 words of memory out of 5000000
+ 16647 multiletter control sequences out of 15000+600000
+ 94279 words of font info for 167 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 39i,11n,35p,1334b,597s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 39i,11n,35p,1331b,593s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/en
 c/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}</usr/s
 hare/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/publi
-c/lm/lmbxi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi10.pfb></usr/share
-/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/
-lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr17.pfb></usr/share/texmf/f
-onts/type1/public/lm/lmr9.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pf
-b></usr/share/texmf/fonts/type1/public/lm/lmri9.pfb></usr/share/texmf/fonts/typ
-e1/public/lm/lmss10.pfb></usr/share/texmf/fonts/type1/public/lm/lmss12.pfb></us
-r/share/texmf/fonts/type1/public/lm/lmsso12.pfb></usr/share/texmf/fonts/type1/p
-ublic/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy6.pfb></usr/sha
-re/texmf/fonts/type1/public/lm/lmsy8.pfb>
-Output written on pc2-artigo.pdf (19 pages, 496486 bytes).
+c/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmbxi10.pfb></usr/share
+/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm
+/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/
+fonts/type1/public/lm/lmr17.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.
+pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/
+type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss17.pfb><
+/usr/share/texmf/fonts/type1/public/lm/lmsso12.pfb></usr/share/texmf/fonts/type
+1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy7.pfb>
+Output written on pc2-artigo.pdf (21 pages, 493583 bytes).
 PDF statistics:
- 518 PDF objects out of 1000 (max. 8388607)
- 461 compressed objects within 5 object streams
- 86 named destinations out of 1000 (max. 500000)
+ 526 PDF objects out of 1000 (max. 8388607)
+ 468 compressed objects within 5 object streams
+ 88 named destinations out of 1000 (max. 500000)
  31935 words of extra memory for PDF output out of 35830 (max. 10000000)
 
